@@ -17,6 +17,7 @@
     "runTests:Headed-on-mobileChrome-Pixel5": "npx playwright test  --project=MobileChrome",
     "runTests:Headed-on-mobileSafari-Iphone12": "npx playwright test  --project=MobileSafari",
     "open:PlaywriteReport": "npx playwright show-report",
+    "generate:AllureReport": "allure generate allure-results -o allure-report --clean",
     "open:AllureReport": "allure generate allure-results -o allure-report --clean && allure open allure-report"
 
   },
