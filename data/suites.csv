@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Oct 13 13:30:06 UTC 2022","Thu Oct 13 13:30:07 UTC 2022","1069","chromium","example.spec.js","","","","homepage has Playwright in title and get started link linking to the intro page",""
-"passed","Thu Oct 13 13:30:07 UTC 2022","Thu Oct 13 13:30:09 UTC 2022","2329","firefox","example.spec.js","","","","homepage has Playwright in title and get started link linking to the intro page",""
-"passed","Thu Oct 13 13:30:11 UTC 2022","Thu Oct 13 13:30:15 UTC 2022","4045","webkit","example.spec.js","","","","homepage has Playwright in title and get started link linking to the intro page",""
+"passed","Thu Oct 13 13:35:42 UTC 2022","Thu Oct 13 13:35:46 UTC 2022","4284","firefox","example.spec.js","","","","homepage has Playwright in title and get started link linking to the intro page",""
+"passed","Thu Oct 13 13:35:40 UTC 2022","Thu Oct 13 13:35:41 UTC 2022","1049","chromium","example.spec.js","","","","homepage has Playwright in title and get started link linking to the intro page",""
+"passed","Thu Oct 13 13:35:47 UTC 2022","Thu Oct 13 13:35:50 UTC 2022","2993","webkit","example.spec.js","","","","homepage has Playwright in title and get started link linking to the intro page",""
