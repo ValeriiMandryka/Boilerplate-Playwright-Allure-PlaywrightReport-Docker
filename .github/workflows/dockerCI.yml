@@ -1,15 +1,22 @@
-steps:
-  playwright:
-    name: 'Playwright Tests'
+name: docker-compose-actions-workflow
+on: push
+jobs:
+  test:
     runs-on: ubuntu-latest
-    container:
-      image: mcr.microsoft.com/playwright:v1.27.0-focal
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v2
+      - name: Build the stack
+        run: docker-compose -f "docker-compose.yml" up -d --build
+      - name: Install node
+        uses: actions/setup-node@v1
         with:
-          node-version: '14'
+          node-version: 14.x
       - name: Install dependencies
-        run: npm ci
-      - name: Run your tests
-        run: npx playwright test
+        run: npm install
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps  
+      - name: Test
+        run: npx npx playwright test
+      - name: Stop containers
+        if: always()
+        run: docker-compose -f "docker-compose.yml" down
