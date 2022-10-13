@@ -27,7 +27,7 @@ jobs:
     - name: Upload Results
       uses: actions/upload-artifact@v1
       if: always()
-       with:
+      with:
          name: allure-results
          path: ./allure-results
     - name: Publishing Allure artifact to Github Actions
