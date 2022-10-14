@@ -1,46 +1,30 @@
 version: "3"
+
+# // Следует учитывать, что docker-composes работает с сервисами.
+# // 1 сервис = 1 контейнер.
+# // Раздел, в котором будут описаны сервисы, начинается с 'services'.
+
 services:
-  chrome:
-    image: selenium/node-chrome:4.4.0-20220831
-    shm_size: 2gb
-    depends_on:
-      - selenium-hub
-    environment:
-      - SE_EVENT_BUS_HOST=selenium-hub
-      - SE_EVENT_BUS_PUBLISH_PORT=4442
-      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-    ports:
-      - "5900" 
-  edge:
-    image: selenium/node-edge:4.4.0-20220831
-    shm_size: 2gb
-    depends_on:
-      - selenium-hub
-    environment:
-      - SE_EVENT_BUS_HOST=selenium-hub
-      - SE_EVENT_BUS_PUBLISH_PORT=4442
-      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-    ports:
-      - "5902"
 
-  firefox:
-    image: selenium/node-firefox:4.4.0-20220831
-    shm_size: 2gb
-    depends_on:
-      - selenium-hub
-    environment:
-      - SE_EVENT_BUS_HOST=selenium-hub
-      - SE_EVENT_BUS_PUBLISH_PORT=4442
-      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-    ports:
-      - "5901"
+  # // Сервис - контейнер, созданный из Dockerfile
+  # // Назвать его можно так, как хочется.
+  # // Понятное название сервиса помогает определить его роль.
+  # // Здесь мы, для именования соответствующего сервиса, используем ключевое слово 'python'.
+  Playwrite:
 
-  selenium-hub:
-    image: selenium/hub:4.4.0-20220831
-    container_name: selenium-hub
-    logging:
-      driver: none
-    ports:
-      - "4442:4442"
-      - "4443:4443"
-      - "4444:4444"
+    # // Ключевое слово "build" позволяет задать
+    # // путь к файлу Dockerfile, который нужно использовать для создания образа,
+    # // который позволит запустить сервис.
+    # // Здесь . соответствует текущему пути
+    build: .
+
+    # // указываем название образа, который получится в процессе билда
+    image: playwright-docker
+
+    # // имя контейнера, который будет стартовать от образа
+    container_name: playwright_All_Browsers
+
+    # // Команда, которую нужно запустить после создания образа.
+    # // Следующая команда означает запуск python-скрипта
+    command: npx playwright test  
+  
