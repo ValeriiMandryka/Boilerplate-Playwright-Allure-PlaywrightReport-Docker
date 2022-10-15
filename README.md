@@ -1,5 +1,5 @@
 # Boilerplate-Playwright-PlaywrightReport-AllureReport
-Template repository for project based on Playwright framefork with configurated GitHub actions and Allure report. Can be used for auto testing on Chromium/Firefox/Webkit browsers and MobileChrome/MobileSafari
+Template repository for project based on Playwright framefork with configurated GitHub actions and Allure report. Can be used for auto testing on Chromium/Firefox/Webkit browsers and MobileChrome/MobileSafari also icluded Docker
 
 ##  Attantion! To run tests on different browsers Antivirus tool should be switched off 
 
@@ -41,4 +41,16 @@ npx playwright install
 
    ```
    Where landing-page.spec.ts you should to switch the name on your file name 
+   
+## 4. Run tests in Docker
+   4.1 Run comand
+     ```
+    npm run Selenium-Grid-Server
+
+   ```
+   4.2 Run comand in Bash terminal
+    ```
+   SELENIUM_REMOTE_URL=http://localhost:4444/wd/hub npx playwright test --config=docker.config.js
+
+   ```
   
