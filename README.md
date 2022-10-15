@@ -45,7 +45,7 @@ npx playwright install
 ## 4. Run tests in Docker
    4.1 Run comand
      ```
-    npm run Selenium-Grid-Server
+    npm run StartSelenium-Grid-Server
 
    ```
    4.2 Run comand in Bash terminal
