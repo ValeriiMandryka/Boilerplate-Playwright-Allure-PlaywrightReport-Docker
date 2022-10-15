@@ -93,17 +93,17 @@ const config = {
         channel: 'msedge',
       },
     },
-    {
-      name: 'Firefox',
-      use:  {browserName: 'firefox'} ,
+    // {
+    //   name: 'Firefox',
+    //   use:  {browserName: 'firefox'} ,
       
-    },
-    {
-      name: 'Google Chrome',
-      use: {
-        channel: 'chrome',
-      },
-    },
+    // },
+    // {
+    //   name: 'Google Chrome',
+    //   use: {
+    //     channel: 'chrome',
+    //   },
+    // },
   ],
 
   /* Folder for test artifacts such as screenshots, videos, traces, etc. */

@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build the stack
-        run: docker-compose -f "docker-compose.yml" up -d --build
+        run: docker-compose -f "docker-compose-GRID.yml" up -d --build
       - name: Install node
         uses: actions/setup-node@v1
         with:
@@ -16,7 +16,13 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps  
       - name: Test
-        run:  npx playwright test --config=docker.config.js
+        run:  npx playwright test --headed --config=docker.config.js
+      - name: Publishing Allure artifact to Github Actions
+        uses: actions/upload-artifact@v2
+        if: always()
+        with:
+         name: video-report
+         path: tmp/videos/
       - name: Stop containers
         if: always()
-        run: docker-compose -f "docker-compose.yml" down
+        run: docker-compose -f "docker-compose-GRID.yml" down
