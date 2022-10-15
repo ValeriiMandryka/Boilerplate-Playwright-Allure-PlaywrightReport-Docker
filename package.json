@@ -18,8 +18,10 @@
     "Tests:Headed-on-mobileSafari-Iphone12": "npx playwright test  --project=MobileSafari",
     "open:PlaywriteReport": "npx playwright show-report",
     "generate:AllureReport": "allure generate allure-results -o allure-report --clean",
-    "open:AllureReport": "allure generate allure-results -o allure-report --clean && allure open allure-report"
-
+    "open:AllureReport": "allure generate allure-results -o allure-report --clean && allure open allure-report",
+    "Selenium-Grid-Server": "docker compose up -d --abort-on-container-exit",
+    
+    "Copy_This_cmd_and_run_it_in_bash": "SELENIUM_REMOTE_URL=http://localhost:4444/wd/hub npx playwright test --config=docker.config.js"
   },
   "keywords": [],
   "author": "Valerii Mandryka",
