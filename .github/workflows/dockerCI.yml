@@ -17,12 +17,18 @@ jobs:
         run: npx playwright install --with-deps  
       - name: Test
         run:  npx playwright test  --config=docker.config.js
+      - name: Upload Results
+        uses: actions/upload-artifact@v1
+        if: always()
+        with:
+         name: video-report
+         path: ./tmp/videos/
       - name: Publishing Allure artifact to Github Actions
         uses: actions/upload-artifact@v2
         if: always()
         with:
          name: video-report
-         path: tmp/videos/
+         path: ./tmp/videos/
       - name: Stop containers
         if: always()
         run: docker-compose -f "docker-compose-GRID.yml" down
