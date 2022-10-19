@@ -80,6 +80,7 @@ npx playwright install
    npm run open:AllureReport
    ```
 ## 6. Open Playwright Report:  
+
    ```
    npm run open:PlaywriteReport
    ```
@@ -99,7 +100,7 @@ npx playwright install
    ```
  ## 8. To run Code Generator :
     
-    ```
+     ```
      npx playwright codegen playwright.dev
-
-   ```
+ 
+     ```
