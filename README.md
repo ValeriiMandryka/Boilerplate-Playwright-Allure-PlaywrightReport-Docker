@@ -70,12 +70,14 @@ npx playwright install
     npx playwright test landing-page.spec.ts
 
    ```
+  Where "landing.page.spec.ts" can be changed on your own spec file
+  
 ## 5. Open Allure Report:
    
    ```
    npm run generate:AllureReport
    
-   open:AllureReport
+   npm run open:AllureReport
    ```
 ## 6. Open Playwright Report:  
    ```
