@@ -43,13 +43,13 @@ npx playwright install
    Where landing-page.spec.ts you should to switch the name on your file name 
    
 ## 4. Run tests in Docker
-   # 4.1 Run comand
+   ### 4.1 Run comand
     
     ```
     npm run StartSelenium-Grid-Server
 
     ```
-   # 4.2 Run comand in Bash terminal
+   ### 4.2 Run comand in Bash terminal
   
    ```
    SELENIUM_REMOTE_URL=http://localhost:4444/wd/hub npx playwright test --config=docker.config.js
