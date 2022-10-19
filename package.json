@@ -22,6 +22,7 @@
     "StartSelenium-Grid-Server": "docker-compose -f docker-compose-GRID.yml up -d --build",
     "StopSelenium-Grid-Server": "docker-compose -f docker-compose-GRID.yml down",
     "StartDockerFileComposed": "docker-compose -f docker-compose.yml up -d --build",
+    "Code:Generetor":"npx playwright codegen playwright.dev",
     
     "Copy_This_cmd_and_run_it_in_bash": "SELENIUM_REMOTE_URL=http://localhost:4444/wd/hub npx playwright test --headed --config=docker.config.js"
   },
