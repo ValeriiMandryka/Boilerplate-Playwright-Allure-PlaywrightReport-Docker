@@ -19,8 +19,12 @@ npx playwright install
 
 ```
 ## 3. Run tests commands:
-
-    3.1 npm run Alltests-Headless  - it will run all tast in Hedless mode
+    3.1  
+  
+    ```
+    npm run Alltests-Headless
+    ```
+    - it will run all tast in Hedless mode
     3.2 npm run Alltests-Headed    - it will run all tast in UI mode
     3.3 npm run Tests:Headless-on-Chromium    - it will run all tast in Hedless mode in Chrome browser
     3.4 npm run Tests:Headless-on-Firefox     - it will run all tast in Hedless mode in Firefox browser
@@ -55,4 +59,8 @@ npx playwright install
    SELENIUM_REMOTE_URL=http://localhost:4444/wd/hub npx playwright test --config=docker.config.js
 
    ```
-  
+  ## 5. To run Code Generator :
+     ```
+   npx playwright codegen playwright.dev
+
+   ```
