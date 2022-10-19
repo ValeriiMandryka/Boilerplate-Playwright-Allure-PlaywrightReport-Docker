@@ -20,27 +20,50 @@ npx playwright install
 ```
 ## 3. Run tests commands:
 
-   3.1  
+   3.1   - it will run all tast in Hedless mode
+      
+    npm run Alltests-Headles 
+   3.2 - it will run all tast in UI mode
+    
+    npm run Alltests-Headed   
+   3.3   - it will run all tast in Hedless mode in Chrome browser
+    
+    npm run Tests:Headless-on-Chromium
+    
+       
+   3.4   - it will run all tast in Hedless mode in Firefox browser
    
-    ```
-    npm run Alltests-Headless
+    npm run Tests:Headless-on-Firefox 
+   3.5 - it will run all tast in Hedless mode in Safari browser
+   
+    npm run Tests:Headless-on-Safari      
+   3.6- it will run all tast in Hedless mode on Mobile Pixel 15
+   
+    npm run Tests:Headless-on-mobileChrome-Pixel5    
+   3.7 - it will run all tast in Hedless mode on Mobile Iphone 12
+   
+    npm run Tests:Headless-on-mobileSafari-Iphone12  
+   3.8 - it will run all tast in UI mode in Chrome browser
     
-     ```
-   - it will run all tast in Hedless mode
-    
-   3.2 npm run Alltests-Headed    - it will run all tast in UI mode
-    3.3 npm run Tests:Headless-on-Chromium    - it will run all tast in Hedless mode in Chrome browser
-    3.4 npm run Tests:Headless-on-Firefox     - it will run all tast in Hedless mode in Firefox browser
-    3.5 npm run Tests:Headless-on-Safari      - it will run all tast in Hedless mode in Safari browser
-    3.6 npm run Tests:Headless-on-mobileChrome-Pixel5    - it will run all tast in Hedless mode on Mobile Pixel 15
-    3.7 npm run Tests:Headless-on-mobileSafari-Iphone12  - it will run all tast in Hedless mode on Mobile Iphone 12
-    3.8 npm run Tests:Headed-on-Chromium  - it will run all tast in UI mode in Chrome browser
-    3.9 npm run Tests:Headed-on-Firefox   - it will run all tast in UI mode in Firefox browser
-    3.10 npm run Tests:Headed-on-Safari   - it will run all tast in UI mode in Safari browser
-    3.11 npm run Tests:Headed-on-mobileChrome-Pixel5     - it will run all tast in UI mode on Mobile Pixel 15
-    3.12 npm run Tests:Headed-on-mobileSafari-Iphone12   - it will run all tast in UI mode on Mobile Iphone 12
-    3.13 npm run open:PlaywriteReport  - it will open Playwright report
-    3.14 npm run open:AllureReport     - it will open Allure report
+    npm run Tests:Headed-on-Chromium  
+   3.9 - it will run all tast in UI mode in Firefox browser
+   
+    npm run Tests:Headed-on-Firefox  
+   3.10 - it will run all tast in UI mode in Safari browser
+   
+    npm run Tests:Headed-on-Safari  
+   3.11 - it will run all tast in UI mode on Mobile Pixel 15
+      
+    npm run Tests:Headed-on-mobileChrome-Pixel5    
+   3.12 - it will run all tast in UI mode on Mobile Iphone 12
+   
+    npm run Tests:Headed-on-mobileSafari-Iphone12   
+   3.13- it will open Playwright report
+       
+    npm run open:PlaywriteReport  
+   3.14 - it will open Allure report
+   
+     npm run open:AllureReport    
 
 ## 4. Running a single test file:
    ```
@@ -63,7 +86,8 @@ npx playwright install
 
    ```
   ## 5. To run Code Generator :
-     ```
-   npx playwright codegen playwright.dev
+    
+    ```
+     npx playwright codegen playwright.dev
 
    ```
