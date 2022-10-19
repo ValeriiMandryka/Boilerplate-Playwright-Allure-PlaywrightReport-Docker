@@ -19,13 +19,16 @@ npx playwright install
 
 ```
 ## 3. Run tests commands:
-    3.1  
-  
+
+   3.1  
+   
     ```
     npm run Alltests-Headless
-    ```
-    - it will run all tast in Hedless mode
-    3.2 npm run Alltests-Headed    - it will run all tast in UI mode
+    
+     ```
+   - it will run all tast in Hedless mode
+    
+   3.2 npm run Alltests-Headed    - it will run all tast in UI mode
     3.3 npm run Tests:Headless-on-Chromium    - it will run all tast in Hedless mode in Chrome browser
     3.4 npm run Tests:Headless-on-Firefox     - it will run all tast in Hedless mode in Firefox browser
     3.5 npm run Tests:Headless-on-Safari      - it will run all tast in Hedless mode in Safari browser
