@@ -96,11 +96,10 @@ npx playwright install
   
    ```
    SELENIUM_REMOTE_URL=http://localhost:4444/wd/hub npx playwright test --config=docker.config.js
-
    ```
- ## 8. To run Code Generator :
+
+## 8. To run Code Generator :
     
      ```
      npx playwright codegen playwright.dev
- 
      ```
