@@ -1,7 +1,7 @@
 # Boilerplate-Playwright-PlaywrightReport-AllureReport
 Template repository for project based on Playwright framefork with configurated GitHub actions and Allure report. Can be used for auto testing on Chromium/Firefox/Webkit browsers and MobileChrome/MobileSafari also icluded Docker
 
-##  Attantion! To run tests on different browsers Antivirus tool should be switched off 
+ ##                                 NOTICE! To run tests on different browsers Antivirus tool should be switched off 
 
 ## Steps to install project
 
