@@ -88,10 +88,10 @@ npx playwright install
   
   ### 7.1 Run comand
     
-    ```
+   ```
     npm run StartSelenium-Grid-Server
 
-    ```
+   ```
    ### 7.2 Run comand in Bash terminal
   
    ```
@@ -100,6 +100,6 @@ npx playwright install
 
 ## 8. To run Code Generator :
     
-     ```
-     npx playwright codegen playwright.dev
-     ```
+   ```
+   npx playwright codegen playwright.dev
+   ```
