@@ -64,28 +64,38 @@ npx playwright install
    3.14 - it will open Allure report
    
      npm run open:AllureReport    
-
 ## 4. Running a single test file:
+   
    ```
     npx playwright test landing-page.spec.ts
 
    ```
-   Where landing-page.spec.ts you should to switch the name on your file name 
+## 5. Open Allure Report:
    
-## 4. Run tests in Docker
-   ### 4.1 Run comand
+   ```
+   npm run generate:AllureReport
+   
+   open:AllureReport
+   ```
+## 6. Open Playwright Report:  
+   ```
+   npm run open:PlaywriteReport
+   ```
+## 7. Run tests in Docker
+  
+  ### 7.1 Run comand
     
     ```
     npm run StartSelenium-Grid-Server
 
     ```
-   ### 4.2 Run comand in Bash terminal
+   ### 7.2 Run comand in Bash terminal
   
    ```
    SELENIUM_REMOTE_URL=http://localhost:4444/wd/hub npx playwright test --config=docker.config.js
 
    ```
-  ## 5. To run Code Generator :
+ ## 8. To run Code Generator :
     
     ```
      npx playwright codegen playwright.dev
