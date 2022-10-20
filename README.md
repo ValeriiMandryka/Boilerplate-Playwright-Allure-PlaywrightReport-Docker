@@ -2,6 +2,11 @@
 Template repository for project based on Playwright framefork with configurated GitHub actions and Allure report. Can be used for auto testing on Chromium/Firefox/Webkit browsers and MobileChrome/MobileSafari also icluded Docker
 
  ##                                 NOTICE! To run tests on different browsers Antivirus tool should be switched off 
+ 
+##  Envoirment:
+   1. [Node.js](https://nodejs.org/uk/)
+   2. [VSC](https://code.visualstudio.com/download)
+   3. [Docker](https://docs.docker.com/desktop/install/windows-install/)
 
 ## Steps to install project
 
