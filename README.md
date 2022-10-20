@@ -33,9 +33,7 @@ npx playwright install
     npm run Alltests-Headed   
    3.3   - it will run all tast in Hedless mode in Chrome browser
     
-    npm run Tests:Headless-on-Chromium
-    
-       
+    npm run Tests:Headless-on-Chromium  
    3.4   - it will run all tast in Hedless mode in Firefox browser
    
     npm run Tests:Headless-on-Firefox 
@@ -63,12 +61,8 @@ npx playwright install
    3.12 - it will run all tast in UI mode on Mobile Iphone 12
    
     npm run Tests:Headed-on-mobileSafari-Iphone12   
-   3.13- it will open Playwright report
-       
-    npm run open:PlaywriteReport  
-   3.14 - it will open Allure report
-   
-     npm run open:AllureReport    
+  
+    
 ## 4. Running a single test file:
    
    ```
